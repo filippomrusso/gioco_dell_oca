@@ -28,13 +28,23 @@ public class Campo {
 
     public void disegnaCampo(){
         for(int i=0; i< campo.length; i++){
-            System.out.println(i);
+            System.out.println("_________");
 
         }
     }
 
     public void disegnaCampo(Giocatore[] giocatori){
-        for (int i=0; i<)
+        for(int i=0; i<giocatori.length; i++){
+            for (int z=0; z<campo.length; z++){
+                System.out.println("_______");
+                if (giocatori[i].getPosizione()==z){
+                    System.out.println(giocatori[i].getPosizione() + "____" + giocatori[i].getNome());
+
+                }
+
+            }
+
+        }
 
     }
 

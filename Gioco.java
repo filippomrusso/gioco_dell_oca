@@ -30,6 +30,7 @@ public class Gioco {
 
         while (campo.giocatoriVivi(giocatori)) {
             for (int i = 0; i < nGiocatori; i++) {
+                campo.disegnaCampo(giocatori);
                 System.out.println();
                 System.out.println("È il turno del " + giocatori[i].getPedina() + " " + giocatori[i].getNome() + "\n Premi invio per tirare il tuo dado");
                 input.nextLine();
