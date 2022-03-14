@@ -20,6 +20,23 @@ public class Giocatore {
 
     }
 
+    //Tiro del dado
+    public int getDado() {
+        int risultato;
+        System.out.println("tira il dado...");
+        risultato=gen.nextInt(6);
+        if(risultato == 0){
+            risultato = risultato +1;
+            System.out.println(risultato);
+            System.out.println("Avanza di "+ risultato +" casella");
+        }
+        System.out.println(risultato);
+        System.out.println("Avanza di "+ risultato +" caselle");
+        return risultato;
+    }
+
+
+
     public String getPedina() {
         return pedina;
     }
@@ -47,23 +64,6 @@ public class Giocatore {
     public void setPosizione(int posizione) {
         this.posizione = posizione;
     }
-
-    //Tiro del dado
-    public int getDado() {
-        int risultato;
-        System.out.println("tira il dado...");
-        risultato=gen.nextInt(6);
-        if(risultato == 0){
-            risultato = risultato +1;
-            System.out.println(risultato);
-            System.out.println("Avanza di "+ risultato +" casella");
-        }
-        System.out.println(risultato);
-        System.out.println("Avanza di "+ risultato +" caselle");
-        return risultato;
-    }
-
-
 
     public void setDado(int dado) {
         this.dado = dado;
